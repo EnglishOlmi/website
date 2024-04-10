@@ -1,6 +1,10 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  background-image: url('img/fone.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 header {
@@ -52,8 +56,7 @@ nav ul li a {
 }
 
 main {
-    padding: 20px;
-    background-image: url('/css/image/fone.jpg');
+    padding: 10px;
     background-size: cover;
 }
 
@@ -239,9 +242,10 @@ header img {
  }
 
  .h4-3-Z {
-    padding-left: 100px;
+    padding-left: 20px;
     font-size: 28px;
-    margin: 0;
+    margin-top: -20px;
+    margin-bottom: 10px;
  }
 
  .h4-3 {
@@ -263,12 +267,11 @@ header img {
     margin: 0 auto;
     text-align: left; 
     
-}
+ }
 
  .h1-4 {
     font-size: 26px; 
     text-align: center; 
-    margin-top: 10px; 
     margin: 0;
  }
 
@@ -276,4 +279,139 @@ header img {
     font-size: 18px;
     padding: 0;
     padding-bottom: 10px;
+    margin-top: -6px;
  }
+ 
+ .h1-5 {
+  font-size: 26px; 
+  text-align: center; 
+  margin-top: 10px;
+  margin-top: -25px;
+ }
+
+ .listme2 {
+  font-size: 18px;
+  padding: 0;
+  padding-bottom: 10px;
+  max-width: 1340px; 
+  margin: 0 auto;
+  margin-top: -14px;
+ }
+
+/* Стили для экранов шириной меньше 600px */
+@media (max-width: 600px) {
+  header {
+    padding: 5px; /* уменьшить отступы шапки */
+  }
+
+  header img {
+    max-height: 50px; /* Уменьшаем высоту логотипа */
+    margin-top: 10px; /* Уменьшаем отступ сверху */
+  }
+
+  .header-content {
+    margin-top: 5px; /* уменьшить отступ содержимого шапки */
+  }
+
+  .header-h1 {
+    font-size: 16px; /* уменьшить размер заголовка H1 */
+    margin-bottom: 5px; /* уменьшить отступ снизу */
+    margin-top: -5px; /* уменьшить отступ сверху */
+  }
+
+  .header-h2 {
+    font-size: 15px; /* уменьшить размер заголовка H2 */
+    margin-bottom: 5px; /* уменьшить отступ снизу */
+    margin-top: -5px; /* уменьшить отступ сверху */
+  }
+
+  header h4,
+  nav ul {
+    font-size: 14px; /* Уменьшаем размер шрифтов */
+    margin-bottom: 5px; /* уменьшить отступ снизу */
+    margin-top: -5px; /* уменьшить отступ сверху */
+  }
+
+  .header-buttons {
+    margin-left: auto; /* Перемещаем блок кнопок вправо */
+    margin-right: 10px; /* Устанавливаем правый отступ */
+    margin-left: 40px; /* уменьшить отступ кнопок в шапке */
+    margin-top: 2px;
+  }
+
+  .left,
+  .right,
+  .container,
+  .container-2,
+  .container-3,
+  .container-4 {
+    width: 100%; /* Устанавливаем ширину блоков на всю ширину экрана */
+    padding: 10px; /* уменьшить отступы контейнеров на мобильных устройствах */
+  }
+
+  nav ul {
+    margin-left: -80px; /* уменьшить отступы списка навигации */
+  }
+
+  .img-fone {
+    margin-left: 0; /* сбросить отступ изображения на мобильных устройствах */
+  }
+
+  .h1-main,
+  .h3-main,
+  .h4-3-Z,
+  .h4-3,
+  .h1-3,
+  .h1-4,
+  .h1-5,
+  .listme1,
+  .listme2,
+  h2 {
+    font-size: 18px; /* уменьшить размер шрифтов */
+  }
+}
+
+.right {
+  margin-left: -300px; /* сдвигаем блок справа на 300 пикселей влево */
+}
+
+.container-3 {
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+  margin-top: 5px;
+}
+
+.photo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2px;
+}
+
+.text {
+  padding: 20px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.h4-3-Z {
+  font-size: 24px;
+  margin: -5px;
+  margin-top: -20px;
+}
+
+.h4-3 {
+  font-size: 18px;
+  margin: 10px;
+  margin-left: -20px;
+  max-width: 110%;
+  margin-right: -20px;
+  margin-bottom: -10px;
+}
+
+.h1-4,
+.listme1,
+.container-4
+   {
+  max-width: 100%;
+}
